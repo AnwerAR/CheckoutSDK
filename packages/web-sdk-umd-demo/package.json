@@ -1,6 +1,6 @@
 {
 	"name": "@anwerar/web-sdk-umd-demo",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "UMD demo",
 	"type": "module",
 	"private": true,
@@ -14,7 +14,7 @@
 		]
 	},
 	"dependencies": {
-		"@anwerar/checkoutsdk-web": "0.0.3"
+		"@anwerar/checkoutsdk-web": "0.0.4"
 	},
 	"main": "index.html",
 	"license": "MIT"
