@@ -81,7 +81,10 @@ typings/
 # Nuxt.js build / generate output
 .nuxt
 dist
-
+build
+.DS_Store
+exp-monorepo_backend
+out
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and *not* Next.js
