@@ -1,6 +1,6 @@
 {
   "name": "@anwerar/checkoutsdk-web",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "WebSDK",
   "type": "module",
   "main": "dist/esm/checkoutsdk-web.js",

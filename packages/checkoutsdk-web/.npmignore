@@ -109,4 +109,5 @@ babel.config.cjs
 postcss.config.cjs
 rollup.config.js
 tailwind.config.cjs
+dist/umd
 !dist

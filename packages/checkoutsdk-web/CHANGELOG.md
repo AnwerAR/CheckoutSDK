@@ -1,5 +1,11 @@
 # @anwerar/checkoutsdk-web
 
+## 0.0.6
+
+### Patch Changes
+
+-   Exclude umd from npm
+
 ## 0.0.5
 
 ### Patch Changes
