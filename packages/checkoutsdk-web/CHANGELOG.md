@@ -1,5 +1,11 @@
 # @anwerar/checkoutsdk-web
 
+## 0.0.3
+
+### Patch Changes
+
+-   Removed lodash
+
 ## 0.0.2
 
 ### Patch Changes
