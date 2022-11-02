@@ -4,6 +4,7 @@
 	"description": "Utilities",
 	"main": "src/index.js",
 	"type": "module",
+	"private": true,
 	"scripts": {
 		"test": "jest",
 		"lint": "eslint .",
