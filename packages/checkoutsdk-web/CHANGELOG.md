@@ -1,5 +1,11 @@
 # @anwerar/checkoutsdk-web
 
+## 0.0.5
+
+### Patch Changes
+
+-   Exclude unnecessary files form npm artifacts
+
 ## 0.0.4
 
 ### Patch Changes

@@ -103,4 +103,10 @@ out
 .tern-port
 
 src
+scripts
+.eslintrc.js
+babel.config.cjs
+postcss.config.cjs
+rollup.config.js
+tailwind.config.cjs
 !dist
