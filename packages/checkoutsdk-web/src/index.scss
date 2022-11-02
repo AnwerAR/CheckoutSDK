@@ -1,0 +1,127 @@
+.webSDK-container {
+	max-width: var(--payoneerSDK-size-containerMax);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	> .list-wrapper {
+		> .list-item {
+			width: 100%;
+			border: var(--payoneerSDK-border-listItem) solid var(--payoneerSDK-color-primary);
+			border-top: 0;
+
+			> .network-selector {
+				background: inherit;
+				width: 100%;
+				border: 0;
+				text-align: left;
+				display: flex;
+				align-items: center;
+				min-height: 50px;
+				cursor: pointer;
+				gap: 10px;
+
+				&.selected {
+					background-color: var(--payoneerSDK-color-primary);
+				}
+
+				> input {
+					&.hidden {
+						display: none;
+					}
+				}
+			}
+
+			&.list-item:nth-child(1) {
+				border-top: var(--payoneerSDK-border-listItem) solid
+					var(--payoneerSDK-color-primary);
+			}
+		}
+	}
+
+	> .list-title {
+		margin: 10px 0;
+		font-size: 18px;
+	}
+
+	.network-form-container {
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+		margin-bottom: 30px;
+
+		> .network-form-row {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			gap: 15px;
+		}
+
+		.network-form-field {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+			width: 100%;
+			position: relative;
+
+			> input {
+				height: 35px;
+				padding: 0 12px;
+			}
+
+			> .error-msg {
+				color: red;
+				font-size: 12px;
+				position: absolute;
+				bottom: -15px;
+			}
+		}
+	}
+
+	.network-wallet-container {
+		padding: 0px;
+	}
+
+	.submit-btn-wrapper {
+		margin: 15px 0;
+
+		.submit-btn-normal {
+			height: 40px;
+			min-width: 100px;
+			cursor: pointer;
+			background-color: var(--payoneerSDK-color-primary);
+			color: var(--payoneerSDK-color-primary-invert);
+			transition: 0.1s ease-in;
+			border: none;
+
+			&:hover {
+				transition: 0.1s ease-in;
+				background-color: var(--payoneerSDK-color-primary-invert);
+				border: var(--payoneerSDK-border-listItem) solid var(--payoneerSDK-color-primary);
+				color: var(--payoneerSDK-color-primary);
+			}
+		}
+	}
+
+	.error-msg {
+		color: red;
+		margin-top: 15px;
+	}
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+
+	> .popup-body {
+		background: #ffffff;
+		max-width: 600px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		padding: 15px;
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"name": "@anwerar/core",
+	"version": "0.0.0",
+	"description": "Utilities",
+	"main": "src/index.js",
+	"type": "module",
+	"scripts": {
+		"test": "jest",
+		"lint": "eslint .",
+		"build:cjs": "rollup ./src/index.js --file ./build/cjs/bundle.cjs --format cjs",
+		"build:esm": "rollup ./src/index.js --file ./build/esm/bundle.mjs --format esm",
+		"build:umd": "rollup ./src/index.js --file ./build/umd/bundle.js --format umd --name 'myBundle'",
+		"build": "yarn build:cjs && yarn build:esm && yarn build:umd"
+	},
+	"exports": {
+		".": {
+			"import": "./src/index.js",
+			"require": "./build/cjs/bundle.cjs"
+		}
+	},
+	"devDependencies": {
+		"babel-loader": "^8.2.5"
+	},
+	"publishConfig": {
+		"access": "restricted",
+		"registry": "https://npm.pkg.github.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "ssh://git@github.com/optile/exp-monorepo.git",
+		"directory": "packages/utils"
+	}
+}

@@ -1,2 +1,3 @@
 # CheckoutSDK
-Demo checkout SDK for web
+
+Checkout SDK for web
