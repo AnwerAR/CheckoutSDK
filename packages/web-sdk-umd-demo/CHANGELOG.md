@@ -1,5 +1,12 @@
 # @anwerar/web-sdk-umd-demo
 
+## 0.0.9
+
+### Patch Changes
+
+-   Updated dependencies
+    -   @anwerar/checkoutsdk-web@0.0.9
+
 ## 0.0.8
 
 ### Patch Changes

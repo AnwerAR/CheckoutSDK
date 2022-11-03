@@ -1,5 +1,11 @@
 # @anwerar/checkoutsdk-web
 
+## 0.0.9
+
+### Patch Changes
+
+-   Added readme details
+
 ## 0.0.8
 
 ### Patch Changes
