@@ -101,6 +101,7 @@ class PayoneerCheckoutSDK extends WebSDKEvents {
 					appRoot={this.appRoot}
 					// eslint-disable-next-line react/jsx-props-no-spreading
 					{...this.config}
+					webSDK={this}
 				/>
 			</MainContextProvider>,
 			this.shadow,

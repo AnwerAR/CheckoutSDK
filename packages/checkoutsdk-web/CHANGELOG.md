@@ -1,5 +1,11 @@
 # @anwerar/checkoutsdk-web
 
+## 0.0.7
+
+### Patch Changes
+
+-   Exposed class to UMD build and enabled shadowRender
+
 ## 0.0.6
 
 ### Patch Changes

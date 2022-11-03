@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
 	<head>
-
 		<meta charset="UTF-8" />
-
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
 		<title>Checkout Web SDK</title>
 		<script src="./node_modules/@anwerar/checkoutsdk-web/dist/umd/checkoutsdk-web.js"></script>
 		<style>
@@ -18,16 +17,10 @@
 	</head>
 
 	<body>
-
 		<h1>Checkout Web SDK (UMD Build)</h1>
-
 		<div id="web-sdk"></div>
-
 		<!-- <button onclick="instance.destroy()"> Destroy </button>
-
 		<button onclick="instance.render()"> Re init </button> -->
-
-
 		<script>
 			if (PayoneerCheckoutSDK) {
 				const urlSearchParams = new URLSearchParams(window.location.search);
@@ -35,17 +28,17 @@
 				var instance = new PayoneerCheckoutSDK({
 					element: "web-sdk",
 					listUrl: params.listUrl,
-					theme: "boxedOrange"
+					theme: "boxedOrange",
 				});
 
-				// Render
-				instance.render("web-sdk");
+				// shadow DOM render
+				instance.shadowRender("web-sdk");
 
 				/**
 				 * Event listners
 				 **/
 				instance.on("list-loading,list-loaded", (msg, data = null) => {
-					console.log(msg, data && data || '');
+					console.log(msg, (data && data) || "");
 				});
 
 				instance.on("global-error", (error) => {
@@ -59,11 +52,7 @@
 				instance.on("on-charge-response", (data) => {
 					console.log("on-charge-response", data);
 				});
-
 			}
 		</script>
-
 	</body>
-
 </html>
-

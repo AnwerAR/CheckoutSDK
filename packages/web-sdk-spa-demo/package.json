@@ -1,9 +1,9 @@
 {
   "name": "@anwerar/web-sdk-spa-demo",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "dependencies": {
-    "@anwerar/checkoutsdk-web": "0.0.6",
+    "@anwerar/checkoutsdk-web": "0.0.7",
     "@anwerar/core": "0.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

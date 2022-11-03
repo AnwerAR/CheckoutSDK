@@ -1,18 +1,9 @@
 {
   "name": "@anwerar/checkoutsdk-web",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "WebSDK",
   "type": "module",
   "main": "dist/esm/checkoutsdk-web.js",
-  "scripts": {
-    "start": "rollup -c -w",
-    "build": "npm run clean && rollup -c --environment INCLUDE_DEPS,BUILD:production --minifyInternalExports --compact",
-    "test": "jest",
-    "lint": "eslint .",
-    "clean": "rimraf ./dist",
-    "prepublish": "node ./scripts/pre.publish.cjs \",dependencies,devDependencies\"",
-    "postpublish": "node ./scripts/post.publish.cjs"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AnwerAR/CheckoutSDK.git",
