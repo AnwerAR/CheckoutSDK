@@ -1,3 +1,3 @@
 # CheckoutSDK
 
-Checkout SDK for web
+Checkout SDK for web..
